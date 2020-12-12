@@ -20,11 +20,18 @@ class Login extends React.Component {
 
     render() {
         return (
-            <fieldset>
-                {this.state.email}
-                <FormGroup id="emailId" label="Email" tipoInput="text" mudarValor={this.mudarEmail} />
-                <FormGroup id="senhaId" label="Senha" tipoInput="password" mudarValor={this.mudarSenha} />
-            </fieldset>
+            /*
+            col-md-6 offset-md-3 
+            isso significa que tem um espaço a esquerda e a direita no tamanho de 3 colunas, 
+            e o forma com 6 colunas fica centralizado no meio da tela
+            */
+            <div className="container">
+                <form className="col-md-6 offset-md-3">
+                    <FormGroup id="emailId" label="Email" tipoInput="text" mudarValor={this.mudarEmail} />
+                    <FormGroup id="senhaId" label="Senha" tipoInput="password" mudarValor={this.mudarSenha} />
+                    <button type="submit" className="btn btn-primary mx-sm-3">Enviar</button>
+                </form>
+            </div>
         );
     }
 }
