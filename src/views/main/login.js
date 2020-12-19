@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 
 //components
 import FormGroup from '../../components/form-group';
@@ -45,6 +46,7 @@ class Login extends React.Component {
 
         console.log(LocalStorageService.obterUsuarioLogado());
         //aqui o usuário é mandado pra home
+        this.props.history.push('/home');
 
     }
 
@@ -84,4 +86,4 @@ class Login extends React.Component {
     }
 }
 
-export default Login;
+export default withRouter(Login);

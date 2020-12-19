@@ -5,12 +5,12 @@ import 'bootswatch/dist/flatly/bootstrap.min.css';
 import './App.css';
 
 //custom componenst
-import Login from './views/main/login';
+import Rotas from './views/main/rotas';
 
 function App() {
   return (
     <div className="app">
-      <Login />
+      <Rotas />
     </div>
   );
 }

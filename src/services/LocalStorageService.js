@@ -4,11 +4,13 @@ export default class LocalStorageService  {
     static #chaveUsuarioLogado = '_usuario_logado';
 
     static obterUsuarioLogado() {
-        return localStorage.getItem(LocalStorageService.#chaveUsuarioLogado);
+        const usuarioLogado =  localStorage.getItem(LocalStorageService.#chaveUsuarioLogado);
+        return JSON.parse(usuarioLogado);
     }
 
     static salvarUsuarioLogado(usuario) {
-        localStorage.setItem(LocalStorageService.#chaveUsuarioLogado, usuario);
+        const usuarioString = JSON.stringify(usuario);
+        localStorage.setItem(LocalStorageService.#chaveUsuarioLogado, usuarioString);
     }
 
     static salvarItem(chave, item) {

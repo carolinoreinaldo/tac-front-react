@@ -5,8 +5,9 @@ Frond and do projeto tac feito com react
 - https://bootswatch.com/flatly/
 - Instalação : npm install bootswatch
 
-## Usando Route do React
-- npm install --save react-router-dom
+## React Router
+- Link : https://www.npmjs.com/package/react-router
+- Instalação : npm install react-router-dom --save
 
 ## Bootstrap
 
