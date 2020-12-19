@@ -13,9 +13,8 @@ class FormGroup extends React.Component {
                     className="form-control mx-sm-3"
                     id={this.props.id}
                     aria-describedby="emailHelp"
-                    onChange={(e) => {
-                        this.props.mudarValor(e.target.value);
-                    }}
+                    onChange={this.props.mudarValor}
+                    value={this.valor}
                 />
             </div>
         )

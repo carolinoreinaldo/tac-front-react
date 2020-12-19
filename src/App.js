@@ -5,7 +5,7 @@ import 'bootswatch/dist/flatly/bootstrap.min.css';
 import './App.css';
 
 //custom componenst
-import Login from './views/login';
+import Login from './views/main/login';
 
 function App() {
   return (
